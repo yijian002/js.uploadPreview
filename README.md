@@ -6,15 +6,15 @@ Upload image preview, Javascript plugin.
 ### Code examples
 ``` js
 window.uploadPreview({
-	label_field: 'callback-upload',
-	preview: 'preview-id'
+  label_field: 'callback-upload',
+  preview: 'preview-id'
 });
 ```
 
 ### AMD require.js
 ``` js
 require(['uploadPreview'], function(uploadPreview) {
-	// ...
+  // ...
 });
 ```
 
