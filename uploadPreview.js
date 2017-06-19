@@ -5,7 +5,7 @@
 */
 
 ;
-(function(factory, window, document) {
+(function(factory, window) {
         if (typeof define === 'function' && define.amd) {
             define('uploadPreview', factory);
         } else {
@@ -147,4 +147,4 @@
 
         return uploadPreview;
 
-    }, window, document));
+    }, window));
