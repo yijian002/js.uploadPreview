@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title> Example - Upload Preview </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" type="text/css" href="css/example.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="preview" id="preview-id"></div>
+        <input type="file" name="image" id="callback-upload" />
+        <label for="callback-upload" id="upload-btn">Choose File</label>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="../uploadPreview.js"></script>
+<script type="text/javascript">
+(function(window) {
+
+    window.uploadPreview({
+        label_field: 'callback-upload',
+        preview: 'preview-id'
+    });
+
+}(window));
+</script>
