@@ -76,9 +76,14 @@
         }
 
         function showImg(src) {
-            preview.style.backgroundImage = 'url(' + src + ')';
-            preview.style.backgroundSize = 'cover';
-            preview.style.backgroundPosition = 'center center';
+            if(preview.tagName === 'IMG') {
+                preview.src = src;
+            }
+            else {
+                preview.style.backgroundImage = 'url(' + src + ')';
+                preview.style.backgroundSize = 'cover';
+                preview.style.backgroundPosition = 'center center'; 
+            }
         }
 
         var uploadPreview = function(opts) {
